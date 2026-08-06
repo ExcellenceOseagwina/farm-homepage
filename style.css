@@ -1,0 +1,75 @@
+:root {
+    --primary-color: white;
+    --secondary-color: #07a007;
+    --blend-mode: #0000009d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./assets/steven-weeks-DUPFowqI6oI-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 83vh;
+    width: 100%;
+    background-color: var(--blend-mode);
+    background-blend-mode: darken;
+    box-sizing: border-box;
+
+}
+
+/* Farm Header */
+#smart-farm {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--primary-color);
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.paragraph {
+    text-align: center;
+    color: var(--primary-color);
+    margin-top: 40px;
+
+    p {
+        width: 35%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.button {
+    display: block;
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn {
+    border-radius: 30px;
+    padding: 15px 35px;
+    font-family: inherit;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.login-dashboard-btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    /* margin-right: 5px; */
+}
+
+.create-act-btn {
+    color: var(--primary-color);
+    background: none;
+    border: 2px var(--primary-color) solid;
+    /* margin-left: 4px;    */
+}
