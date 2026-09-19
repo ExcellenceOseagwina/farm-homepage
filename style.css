@@ -7,6 +7,26 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(16, 63, 16);
+    height: 4em;
+    border-bottom: white 5px solid;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-icon {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: .4em;
+}
+
+.emoji {
+    font-size: 3em;
 }
 
 body {
@@ -14,42 +34,24 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 83vh;
-    width: 100%;
+    min-height: 100vh;
     background-color: var(--blend-mode);
     background-blend-mode: darken;
-    box-sizing: border-box;
-
 }
 
 /* Farm Header */
 #smart-farm {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--primary-color);
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    text-align: center;
 }
 
 .paragraph {
-    text-align: center;
     color: var(--primary-color);
-    margin-top: 40px;
 
-    p {
-        width: 35%;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 
 .button {
-    display: block;
-    width: 30%;
-    margin-right: auto;
-    margin-left: auto;
+
 }
 
 .btn {
@@ -58,18 +60,53 @@ body {
     font-family: inherit;
     font-weight: bold;
     margin-top: 50px;
+    cursor: pointer;
 }
 
 .login-dashboard-btn {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     border: none;
-    /* margin-right: 5px; */
+
 }
 
 .create-act-btn {
     color: var(--primary-color);
     background: none;
     border: 2px var(--primary-color) solid;
-    /* margin-left: 4px;    */
+}
+
+@media (max-width: 555px) {
+    header {
+        gap: 26em;
+        justify-content: space-around;
+        position: fixed;
+        left: 0;
+        right: 0;
+    }
+
+    #smart-farm {
+        font-size: 2em;
+
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container {
+        margin-top: 14em;
+        gap: 2em;
+        position: fixed;
+    }
+
+    p {
+        width: 89.5%;
+        margin: 0 auto 0 auto;
+        line-height: 1.5em;
+    }
 }
