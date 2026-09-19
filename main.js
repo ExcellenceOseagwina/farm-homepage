@@ -1,10 +1,10 @@
-const buttonMenu = document.querySelector('.menu-icon');
-const hidden = document.querySelector('.red');
+const menuBar = document.querySelector(".menu-icon");
+const hiddenMenu = document.querySelector(".red");
 
-buttonMenu.addEventListener('click', function(){
-    if (hidden.style.display === 'none') {
-        hidden.style.display = 'block';
-    }
-    else
-        hidden.style.display = 'none'
-})
+menuBar.addEventListener("click", function () {
+  if (hiddenMenu.style.display === "none") {
+    hiddenMenu.style.display = "flex";
+     hiddenMenu.style.flexDirection = "column";
+    //   hiddenMenu.style.transform = "translateX(-10px)";
+  } else hiddenMenu.style.display = "none";
+});
