@@ -12,17 +12,21 @@
 
 header {
     background-color: rgb(16, 63, 16);
-    height: 4em;
+    height: 6em;
     border-bottom: white 5px solid;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 90%;
 }
 
 .menu-icon {
     color: white;
-    font-size: 30px;
+    font-size: 2.8em;
     cursor: pointer;
     margin-top: .4em;
+    transform: translateY(-10px);
 }
 
 .emoji {
@@ -39,28 +43,46 @@ body {
     background-blend-mode: darken;
 }
 
+.block {
+    display: block;
+    text-align: center;
+    margin-top: 10em;
+}
+
 /* Farm Header */
-#smart-farm {
+.smart-farm {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--primary-color);
+    font-size: 3em;
+    margin-bottom: 1em;
 }
 
-.paragraph {
+.text-large.text-mobile {
     color: var(--primary-color);
-
 }
 
-.button {
-
+.text-large {
+    font-size: 1.5em;
+    width: 70%;
+    margin: 0 auto 0 auto;
 }
 
 .btn {
     border-radius: 30px;
-    padding: 15px 35px;
+    padding: 1.5em 2em;
     font-family: inherit;
     font-weight: bold;
     margin-top: 50px;
     cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+
 }
 
 .login-dashboard-btn {
@@ -68,6 +90,12 @@ body {
     color: var(--primary-color);
     border: none;
 
+}
+
+.login-dashboard-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--blend-mode);
+    transition: 0.2s ease-in-out;
 }
 
 .create-act-btn {
@@ -87,7 +115,7 @@ body {
 
     #smart-farm {
         font-size: 2em;
-
+margin-bottom:  0;
     }
 
     .flex {
@@ -104,9 +132,12 @@ body {
         position: fixed;
     }
 
-    p {
+    .text-mobile {
+        color: var(--primary-color);
         width: 89.5%;
         margin: 0 auto 0 auto;
         line-height: 1.5em;
+        font-size: 1em;
     }
+
 }
